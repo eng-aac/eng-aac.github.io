@@ -1,0 +1,21 @@
+.footer {
+    display: block;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: #343a40;
+    color: #fff;
+}
+
+.btn-social {
+    border-radius: 100%;
+    display: inline-flex;
+    width: 3.25rem;
+    height: 3.25rem;
+    font-size: 1.25rem;
+    justify-content: center;
+    align-items: center;
+}
+  
+.copyright {
+    background-color: #6c757d;
+}
