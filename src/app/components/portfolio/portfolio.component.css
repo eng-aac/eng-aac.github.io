@@ -1,0 +1,18 @@
+.image-project{
+    height: 150px;
+    box-shadow: 10px 5px 5px #A4A4A4;
+    border-radius: 10px;
+}
+
+.container-card{
+    flex-wrap: wrap;
+}
+  
+.card{
+    height: auto;
+    border-radius: 20px;
+    margin: 13px;
+    box-shadow: 10px 5px 5px #A4A4A4;
+    padding: 10px;
+    border: 2px solid darkslateblue;
+}

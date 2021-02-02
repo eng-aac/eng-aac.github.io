@@ -1,4 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 
 import { AngularFireModule } from '@angular/fire';
@@ -16,6 +17,7 @@ import { SkillsComponent } from './components/skills/skills.component';
 import { environment } from 'src/environments/environment';
 
 import { ProgressbarModule } from 'ngx-bootstrap/progressbar';
+import { SortPipe } from './pipes/sort.pipe';
 
 @NgModule({
   declarations: [
@@ -24,10 +26,12 @@ import { ProgressbarModule } from 'ngx-bootstrap/progressbar';
     FooterComponent,
     ProfileComponent,
     PortfolioComponent,
-    SkillsComponent
+    SkillsComponent,
+    SortPipe
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
 
     ProgressbarModule.forRoot(),

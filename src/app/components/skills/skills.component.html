@@ -1,4 +1,4 @@
-<div class="container pt-5">
+<div class="container pt-5 animated fadeIn">
 
     <h2 class="page-section-heading text-center text-uppercase mb-0">Skills</h2>
 
@@ -18,12 +18,12 @@
 
     <div class="container" *ngIf="!loading">
         <ul class="list-group list-group-flush pl-0">
-            <li class="list-group-item row d-flex justify-content-between align-items-center pl-0 pr-0" *ngFor="let skill of skills">
-                <div class="item col pl-0">
+            <li class="list-group-item row d-flex h-100 justify-content-between align-items-center pl-0 pr-0" *ngFor="let skill of skills | sort:'name':'ASC'">
+                <div class="item col pl-0 h4 m-2">
                     {{ skill.name }}
                 </div>
                 <div class="col pl-0 pr-0">
-                    <div class="mb-4 mb-sm-0">
+                    <div class="d-flex h-100 align-items-center">
                         <progressbar max="100" [value]="skill.percentage" type="dark" [striped]="true" [animate]="true"></progressbar>
                     </div>
                 </div>
