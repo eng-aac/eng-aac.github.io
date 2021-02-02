@@ -8,14 +8,29 @@
         <div class="divider-custom-line"></div>
     </div>
 
-    <div class="row justify-content-center">
-        <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
+    <div class="container" style="height: 300px;" *ngIf="loading">
+      <div class="d-flex justify-content-center align-items-center h-100">
+        <div class="spinner-border text-dark" role="status">
+          <span class="sr-only">Loading...</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="row justify-content-center" *ngIf="!loading">
+        <div class="card" style="width: 18rem;" *ngFor="let project of projects">
+            <img [src]="project.imgUrl" class="card-img-top" alt="project-image">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <h5 class="card-title text-center"> {{ project.name }}</h5>
+              <hr>
+              <h6 class="card-title text-center"> {{ project.anio }}</h6>
+              <hr>
+              <p class="card-text text-justify font-italic"> {{ project.description }} </p>
+              <a href="https://github.com/mecanizados-aac/{{project.name}}" class="btn btn-outline-dark btn-block">
+                <i class="fas fa-arrow-right"></i>
+                <i class="fab fa-github ml-2"></i>
+                See in GitHub
+              </a>
             </div>
-          </div>   
+        </div>   
     </div>
 </div>

@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "portfolio-daac": {
+      "hosting": {
+        "portfolio-daac": [
+          "portfolio-daac"
+        ]
+      }
+    }
+  }
+}
