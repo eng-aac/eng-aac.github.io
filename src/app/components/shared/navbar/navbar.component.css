@@ -1,0 +1,7 @@
+a.mec, a.mec:link, a.mec:visited, a.mec:focus, a.mec:active{
+    color: darkslateblue;
+}
+
+a.mec:hover{
+    color: darkviolet;
+}

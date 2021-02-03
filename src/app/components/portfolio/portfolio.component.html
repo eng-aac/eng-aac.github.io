@@ -17,15 +17,15 @@
     </div>
 
     <div class="row d-flex justify-content-center container-card" *ngIf="!loading">
-        <div class="card p-3" style="width: 18rem;" *ngFor="let project of projects | sort:'anio':'DESC'">
+        <div class="card p-3 bg-secondary text-white" style="width: 18rem;" *ngFor="let project of projects | sort:'anio':'DESC'">
             <img [src]="project.imgUrl" class="card-img-top image-project" alt="project-image">
             <div class="card-body">
               <h5 class="card-title text-center"> {{ project.name }}</h5>
-              <hr>
+              <hr class="bg-light">
               <h6 class="card-title text-center"> {{ project.anio }}</h6>
-              <hr>
+              <hr class="bg-light">
               <p class="card-text text-justify font-italic"> {{ project.description }} </p>
-              <a href="https://github.com/mecanizados-aac/{{project.name}}" class="btn btn-outline-dark btn-block">
+              <a href="https://github.com/mecanizados-aac/{{project.name}}" class="btn btn-outline-light btn-block">
                 <i class="fas fa-arrow-right"></i>
                 <i class="fab fa-github ml-2"></i>
                 See in GitHub
