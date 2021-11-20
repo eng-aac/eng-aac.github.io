@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { trigger, style, transition, animate, state } from '@angular/animations';
 
 @Component({
@@ -20,11 +20,8 @@ import { trigger, style, transition, animate, state } from '@angular/animations'
     ])
   ]
 })
-export class ProfileComponent implements OnInit {
+export class ProfileComponent{
 
   constructor() { }
-
-  ngOnInit(): void {
-  }
 
 }
