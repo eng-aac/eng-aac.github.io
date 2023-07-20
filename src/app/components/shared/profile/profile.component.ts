@@ -8,12 +8,12 @@ import { trigger, style, transition, animate, state } from '@angular/animations'
   animations: [
     trigger('enterState', [
       state('void', style({
-        transform: 'translateX(-120%) translateY(-50%)',
+        transform: 'translateX(-150%)',
         opacity: 0
       })),
       transition(':enter', [
         animate(800, style({
-          transform: 'translateX(-20%) translateY(-50%)',
+          transform: 'translateX(0)',
           opacity: 0.5
         }))
       ])
