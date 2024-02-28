@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Renderer2 } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
@@ -7,6 +7,15 @@ import { Component } from '@angular/core';
 })
 export class NavbarComponent {
 
-  constructor() { }
+  constructor(
+    private renderer: Renderer2,
+  ) { }
+
+  scrollToId( id: string ){
+    setTimeout(() => {
+      const element = this.renderer.selectRootElement(`#${id}`, true); 
+      element.scrollIntoView({behavior: "smooth", block: "center", inline: "center"});
+    }, 100);
+  }
 
 }

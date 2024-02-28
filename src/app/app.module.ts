@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireStorageModule } from '@angular/fire/storage';
@@ -18,6 +19,7 @@ import { environment } from 'src/environments/environment';
 
 import { ProgressbarModule } from 'ngx-bootstrap/progressbar';
 import { SortPipe } from './pipes/sort.pipe';
+import { ActivitiesComponent } from './components/activities/activities.component';
 
 @NgModule({
   declarations: [
@@ -27,10 +29,12 @@ import { SortPipe } from './pipes/sort.pipe';
     ProfileComponent,
     PortfolioComponent,
     SkillsComponent,
-    SortPipe
+    SortPipe,
+    ActivitiesComponent
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     BrowserAnimationsModule,
     AppRoutingModule,
 

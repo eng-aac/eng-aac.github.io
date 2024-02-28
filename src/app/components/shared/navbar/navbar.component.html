@@ -1,7 +1,7 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top pt-1 pb-1">
+<nav style="background: #5E376D;" class="navbar navbar-expand-lg navbar-dark fixed-top pt-1 pb-1">
   <div class="container">
-    <a class="navbar-brand font-weight-bold font-italic mec" href="https://github.com/mecanizados-aac">
-      <img class="img-logo" src="assets/ac-logo.png" alt="img-logo">
+    <a class="navbar-brand font-weight-bold font-italic mec" href="https://github.com/mecanizados-aac" target="_blank">
+      <p class="text-logo"> &lt;<span class="text-white">aac</span> /&gt;</p>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -9,7 +9,7 @@
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto">
+      <ul class="navbar-nav ml-auto" (click)="scrollToId('body-mec')">
         <li class="nav-item" routerLinkActive="active">
           <a class="nav-link" routerLink="skills">
             <i class="fas fa-list"></i>
@@ -23,7 +23,31 @@
             Portfolio
           </a>
         </li>
+
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" routerLink="services">
+            <i class="fas fa-laptop-code"></i>
+            Services
+          </a>
+        </li>
       </ul>
+
+      <form class="form-inline my-2 my-lg-1 ml-lg-2">
+        <div class="form-group">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text">
+                <i class="fas fa-language"></i>
+              </div>
+            </div>
+
+            <select class="form-control" id="selectIdiom">
+              <option>EN</option>
+              <option>ES</option>
+            </select>
+          </div>
+        </div>
+      </form>
     </div>
 
   </div>

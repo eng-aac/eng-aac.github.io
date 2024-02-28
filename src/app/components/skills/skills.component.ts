@@ -11,22 +11,25 @@ export class SkillsComponent implements OnInit {
 
   skills: Skill[] = new Array<Skill>();
   loading: boolean = true;
+  error: boolean = false;
 
   constructor( private db: AngularFirestore ) { }
 
   ngOnInit(): void {
     this.skills.length = 0;
 
-    this.db.collection<Skill>('skill').get().subscribe((data) => {
-      data.docs.forEach((item) => {
-        const skill: Skill = item.data() as Skill;
-        skill.id = item.id;
+    this.db.collection<Skill>('skill').get()
+      .subscribe((data) => {
+        data.docs.forEach((item) => {
+          const skill: Skill = item.data() as Skill;
+          skill.id = item.id;
 
-        this.skills.push(skill); 
-        
+          this.skills.push(skill); 
+        });
+
         this.loading = false;
-      })
-    })
+      },
+      (error) =>  this.error = true );
   }
 
 }

@@ -1,18 +1,16 @@
-.image-project{
+.image-project {
     height: 150px;
-    box-shadow: 10px 5px 5px #A4A4A4;
     border-radius: 10px;
 }
 
-.container-card{
-    flex-wrap: wrap;
+.carousel-control-next,
+.carousel-control-prev {
+    background-color: #303030 !important;
+    border: none !important;
+    opacity: .5 !important;
 }
-  
-.card{
-    height: auto;
-    border-radius: 20px;
-    margin: 13px;
-    box-shadow: 10px 5px 5px #A4A4A4;
-    padding: 10px;
-    border: 2px solid darkslategray;
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    color: white !important;
 }

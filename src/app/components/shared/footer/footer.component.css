@@ -2,7 +2,7 @@
     display: block;
     padding-top: 5rem;
     padding-bottom: 5rem;
-    background-color: #343a40;
+    background-color: #5E376D;
     color: #fff;
 }
 
@@ -17,5 +17,6 @@
 }
   
 .copyright {
-    background-color: #6c757d;
+    background-color: #D4BBDD;
+    color: black !important;
 }

@@ -1,10 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
-h1{
-    font-family: 'Cinzel Decorative', cursive;
+* {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
 }
 
-*{
-    font-family: 'Josefin Sans', sans-serif;
+.initial {
+    color: white;
+    background-color: #303030;
+}
+
+.bg-purple {
+    background-color: #5E376D !important;
 }
 
 .page-section {
@@ -28,9 +34,9 @@ h1{
     width: 100%;
     max-width: 7rem;
     height: 0.25rem;
-    background-color: #2c3e50;
+    background-color: #F7E951;
     border-radius: 1rem;
-    border-color: #2c3e50 !important;
+    border-color: #F7E951 !important;
 }
 
 .divider-custom .divider-custom-line:first-child {
@@ -42,16 +48,37 @@ h1{
 }
 
 .divider-custom .divider-custom-icon {
-    color: #2c3e50 !important;
+    color: #F7E951 !important;
     font-size: 2rem;
 }
 
 .divider-custom.divider-light .divider-custom-line {
-    background-color: #fff;
+    background-color: #F7E951;
 }
 
 .divider-custom.divider-light .divider-custom-icon {
-    color: #fff !important;
+    color: #F7E951 !important;
+}
+
+.container-card {
+    flex-wrap: wrap;
+}
+
+.card {
+    height: auto;
+    border-radius: 20px;
+    margin: 13px;
+    padding: 10px;
+    background-color: #ffffff0a;
+}
+
+.subtitle-card {
+    color: #D4BBDD;
+    font-weight: bold;
+}
+
+.card-header {
+    border-bottom-color: #f8f9fa !important;
 }
 
 /* Animaciones */
@@ -74,6 +101,7 @@ h1{
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }

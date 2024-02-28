@@ -1,10 +1,10 @@
 <div class="container pt-5 animated fadeIn">
 
-    <h2 class="page-section-heading text-center text-uppercase mb-0">Skills</h2>
+    <h2 class="page-section-heading text-center text-uppercase mb-0">Services</h2>
 
-    <div class="divider-custom">
+    <div class="divider-custom divider-light">
         <div class="divider-custom-line"></div>
-        <div class="divider-custom-icon"><i class="fas fa-list"></i></div>
+        <div class="divider-custom-icon"><i class="fas fa-laptop-code"></i></div>
         <div class="divider-custom-line"></div>
     </div>
 
@@ -28,15 +28,13 @@
     </div>
 
     <div class="row d-flex justify-content-center container-card" *ngIf="!loading && !error">
-        <div class="card p-2" style="width: 18rem;" *ngFor="let skill of skills | sort:'name':'ASC'">
-            <div class="card-header text-center">
-                {{ skill.name }}
+        <div class="card p-3" style="width: 18rem;" *ngFor="let service of services | sort:'name':'ASC'">
+            <div style="font-size: 2em !important;" class="card-header text-center">
+                <i [class]="service.icon"></i>
             </div>
             <div class="card-body">
-                <div class="d-flex h-100 align-items-center">
-                    <progressbar max="100" [value]="skill.percentage" type="purple" [striped]="true" [animate]="true">
-                    </progressbar>
-                </div>
+                <h5 class="card-title text-center subtitle-card"> {{ service.name }}</h5>
+                <p class="card-text text-justify font-italic"> {{ service.description }} </p>
             </div>
         </div>
     </div>

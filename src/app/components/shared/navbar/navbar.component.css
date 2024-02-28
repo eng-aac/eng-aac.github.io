@@ -1,7 +1,4 @@
-.img-logo{
-    width: 40px;
-    height: 40px;
-    border-radius: 150px;
-    border: 3px solid #ffffff;
-    object-fit: cover;
+.text-logo {
+    margin-bottom: 0;
+    color: #F7E951;
 }

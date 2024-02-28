@@ -11,22 +11,25 @@ export class PortfolioComponent implements OnInit {
 
   projects: Project[] = new Array<Project>();
   loading: boolean = true;
+  error: boolean = false;
 
   constructor( private db: AngularFirestore ) { }
 
   ngOnInit(): void {
     this.projects.length = 0;
 
-    this.db.collection<Project>('project').get().subscribe((data) => {
-      data.docs.forEach((item) => {
-        const project: Project = item.data() as Project;
-        project.id = item.id;
+    this.db.collection<Project>('project').get()
+      .subscribe((data) => {
+        data.docs.forEach((item) => {
+          const project: Project = item.data() as Project;
+          project.id = item.id;
 
-        this.projects.push(project); 
-        
+          this.projects.push(project); 
+        });
+
         this.loading = false;
-      })
-    })
+      },
+      (error) =>  this.error = true );
   }
 
 }
