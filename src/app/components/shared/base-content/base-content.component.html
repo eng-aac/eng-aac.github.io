@@ -1,0 +1,15 @@
+<section class="container pt-5 animated fadeIn">
+    <h2 class="page-section-heading text-center text-uppercase mb-0">
+        {{ titleSection | translate }}
+    </h2>
+
+    <app-divider>
+        <i class="{{iconSection}}"></i>
+    </app-divider>
+
+    <app-loading *ngIf="loading"></app-loading>
+
+    <app-alert *ngIf="error"></app-alert>
+
+    <ng-content select="[body-section]"></ng-content>
+</section>

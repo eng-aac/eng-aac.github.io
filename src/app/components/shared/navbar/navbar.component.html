@@ -3,6 +3,7 @@
     <a class="navbar-brand font-weight-bold font-italic mec" href="https://github.com/mecanizados-aac" target="_blank">
       <p class="text-logo"> &lt;<span class="text-white">aac</span> /&gt;</p>
     </a>
+
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -13,21 +14,21 @@
         <li class="nav-item" routerLinkActive="active">
           <a class="nav-link" routerLink="skills">
             <i class="fas fa-list"></i>
-            Skills
+            {{ 'MENU.ITEM-SKILL' | translate }}
           </a>
         </li>
 
         <li class="nav-item" routerLinkActive="active">
           <a class="nav-link" routerLink="portfolio">
             <i class="far fa-address-card"></i>
-            Portfolio
+            {{ 'MENU.ITEM-PORTFOLIO' | translate }}
           </a>
         </li>
 
         <li class="nav-item" routerLinkActive="active">
           <a class="nav-link" routerLink="services">
             <i class="fas fa-laptop-code"></i>
-            Services
+            {{ 'MENU.ITEM-SERVICES' | translate }}
           </a>
         </li>
       </ul>
@@ -41,14 +42,14 @@
               </div>
             </div>
 
-            <select class="form-control" id="selectIdiom">
-              <option>EN</option>
-              <option>ES</option>
+            <select class="form-control" id="selectIdiom" [(ngModel)]="selectedLanguage" name="lang"
+              (change)="selectLanguage($event.target.value)">
+              <option value="en">EN</option>
+              <option value="es">ES</option>
             </select>
           </div>
         </div>
       </form>
     </div>
-
   </div>
 </nav>

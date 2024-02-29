@@ -6,11 +6,11 @@ import { SkillsComponent } from './components/skills/skills.component';
 
 
 const routes: Routes = [
-  { path: 'skills', component: SkillsComponent },
   { path: 'portfolio', component: PortfolioComponent },
   { path: 'services', component: ActivitiesComponent },
+  { path: 'skills', component: SkillsComponent },
 
-  { path: '**', pathMatch:'full', redirectTo: 'skills' }
+  { path: '**', pathMatch:'full', redirectTo: 'portfolio' }
 ];
 
 @NgModule({

@@ -29,7 +29,10 @@ export class ActivitiesComponent implements OnInit {
 
         this.loading = false;
       },
-      (error) =>  this.error = true );
+      (error) =>  {
+        this.error = true;
+        this.loading = false;
+      });
   }
 
 }

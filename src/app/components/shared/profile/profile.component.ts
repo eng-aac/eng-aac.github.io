@@ -55,7 +55,10 @@ export class ProfileComponent{
 
           setTimeout(() => this.loading = false, 1000);
         },
-        (error) => this.error = true );
+        (error) =>  {
+          this.error = true;
+          this.loading = false;
+        });
   }
 
   private setAndDownloadFile(objFile: FilePDF): boolean {
