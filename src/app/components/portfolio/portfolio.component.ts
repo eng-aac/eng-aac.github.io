@@ -8,12 +8,13 @@ import { Project }  from 'src/app/models/project';
   styleUrls: ['./portfolio.component.css']
 })
 export class PortfolioComponent implements OnInit {
-
   projects: Project[] = new Array<Project>();
   loading: boolean = true;
   error: boolean = false;
 
-  constructor( private db: AngularFirestore ) { }
+  constructor( 
+    private db: AngularFirestore
+  ) { }
 
   ngOnInit(): void {
     this.projects.length = 0;

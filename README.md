@@ -8,8 +8,8 @@
 
 &nbsp;
 
-> ## **powered by**
+> > ## **powered by**
 
 &nbsp;
 
-[![mecanizados|aac](src/assets/aldo_castillo_mecanizados.jpg)](github.com/mecanizados-aac/)
+[![eng-aac](src/assets/img/ac-logo.png)](github.com/eng-aac/)

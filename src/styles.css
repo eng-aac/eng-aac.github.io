@@ -1,16 +1,58 @@
-/* You can add global styles to this file, and also import other style files */
+/* Shared */
+:root {
+    color-scheme: dark;
+    scroll-behavior: smooth;
+}
+
 * {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
 }
 
-.initial {
-    color: white;
-    background-color: #303030;
+html,
+body {
+    height: 100%;
 }
 
-.bg-purple {
-    background-color: #5E376D !important;
+.scroller {
+    width: 100%;
+    height: 200px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+    box-shadow: inset 5px 5px 5px transparent;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, .2);
+    border-radius: 5px;
+}
+
+[data-color-scheme="dark"] ::-webkit-scrollbar-thumb {
+    background: #F7E951;
+}
+
+
+[data-color-scheme="light"] ::-webkit-scrollbar-thumb {
+    background: #5E376D;
+}
+
+.dark-theme,
+.dark-theme #carouselIndProyects {
+    transition: all .1s ease-in-out;
+    color: white !important;
+    background-color: #303030 !important;
+}
+
+.light-theme {
+    transition: all .1s ease-in-out;
+    background-color: white;
 }
 
 .page-section {
@@ -21,6 +63,195 @@
     font-size: 2.25rem;
     line-height: 2rem;
 }
+
+/*  */
+
+/* Profile section */
+
+.particles-js-canvas-el {
+    position: absolute !important;
+    top: 0 !important;
+    z-index: 0 !important;
+    width: 100%;
+    height: 100%;
+    opacity: .9;
+
+    background-size: cover !important;
+    background-position: center !important;
+    background-attachment: fixed !important;
+}
+
+.dark-theme .particles-js-canvas-el {
+    transition: all .1s ease-in-out;
+    background-image: linear-gradient(315deg,
+            hsl(283deg 33% 32%) 0%,
+            hsl(284deg 24% 71%) 17%,
+            hsl(283deg 21% 64%) 34%,
+            hsl(283deg 24% 37%) 55%,
+            hsl(0deg 0% 19%) 99%);
+}
+
+.light-theme .particles-js-canvas-el {
+    transition: all .1s ease-in-out;
+    background-image: linear-gradient(45deg,
+            hsl(240deg 100% 99%) 0%,
+            hsl(248deg 56% 95%) 22%,
+            hsl(256deg 46% 92%) 31%,
+            hsl(265deg 41% 88%) 39%,
+            hsl(274deg 37% 84%) 45%,
+            hsl(284deg 33% 80%) 51%,
+            hsl(284deg 25% 70%) 57%,
+            hsl(284deg 21% 60%) 63%,
+            hsl(284deg 19% 51%) 70%,
+            hsl(284deg 24% 41%) 79%,
+            hsl(283deg 33% 32%) 100%);
+}
+
+.dark-theme h1 {
+    transition: all .1s ease-in-out;
+    color: #ffffff0a;
+    letter-spacing: .03em;
+    text-shadow:
+        4px 4px 0 #d5d5d5,
+        10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.light-theme h1 {
+    transition: all .1s ease-in-out;
+    color: #303030;
+    letter-spacing: .03em;
+    text-shadow:
+        4px 4px 4px #d5d5d5,
+        10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.dark-theme .bg-purple,
+.dark-theme #skillProgressbar bar {
+    transition: all .1s ease-in-out;
+    background-color: #5E376D !important;
+}
+
+.light-theme .bg-light-purple {
+    transition: all .1s ease-in-out;
+    background-color: #D4BBDD !important;
+}
+
+.light-theme .text-custom {
+    transition: all .1s ease-in-out;
+    color: #5E376D !important;
+}
+
+.dark-theme .text-custom {
+    transition: all .1s ease-in-out;
+    color: #F7E951;
+}
+
+.light-theme p.text-nav span {
+    transition: all .1s ease-in-out;
+    color: #5E376D !important;
+}
+
+.dark-theme p.text-nav span {
+    transition: all .1s ease-in-out;
+    color: #D4BBDD !important;
+}
+
+.dark-theme .btn-purple:hover {
+    transition: all .1s ease-in-out;
+    background: white;
+    color: #5E376D;
+}
+
+.light-theme .btn-purple:hover {
+    transition: all .1s ease-in-out;
+    color: white;
+    background: #5E376D;
+}
+
+.dark-theme .btn-purple {
+    transition: all .1s ease-in-out;
+    border-color: white;
+    color: white;
+}
+
+.light-theme .btn-purple {
+    transition: all .1s ease-in-out;
+    color: #5E376D;
+    border-color: #5E376D;
+}
+
+
+.dark-theme .btn-purple-solid:hover {
+    transition: all .1s ease-in-out;
+    color: #212529;
+    background: #e2e6ea;
+    border-color: #dae0e5;
+}
+
+.light-theme .btn-purple-solid:hover {
+    transition: all .1s ease-in-out;
+    color: white;
+    border-color: #462054;
+    background: #462054;
+}
+
+.dark-theme .btn-purple-solid {
+    transition: all .1s ease-in-out;
+    color: #212529;
+    background: #f8f9fa;
+    border-color: #f8f9fa;
+}
+
+.light-theme .btn-purple-solid {
+    transition: all .1s ease-in-out;
+    color: white;
+    border-color: #5E376D;
+    background: #5E376D;
+}
+
+/*  */
+
+/* Carousel section */
+
+.dark-theme .carousel-control-next,
+.dark-theme .carousel-control-prev {
+    transition: all .1s ease-in-out;
+    background-color: #303030 !important;
+    border: none !important;
+    opacity: .5 !important;
+}
+
+.dark-theme .carousel-control-next-icon,
+.dark-theme .carousel-control-prev-icon {
+    transition: all .1s ease-in-out;
+    filter: invert(0%) !important;
+}
+
+.dark-theme .carousel-indicators li {
+    background-color: white !important;
+}
+
+.light-theme .carousel-control-next,
+.light-theme .carousel-control-prev {
+    transition: all .1s ease-in-out;
+    background-color: white !important;
+    border: none !important;
+    opacity: .5 !important;
+}
+
+.light-theme .carousel-control-next-icon,
+.light-theme .carousel-control-prev-icon {
+    transition: all .1s ease-in-out;
+    filter: invert(100%) !important;
+}
+
+.light-theme .carousel-indicators li {
+    background-color: #303030 !important;
+}
+
+/*  */
+
+/* Divider section */
 
 .divider-custom {
     margin: 1.25rem 0 1.5rem;
@@ -34,9 +265,19 @@
     width: 100%;
     max-width: 7rem;
     height: 0.25rem;
-    background-color: #F7E951;
     border-radius: 1rem;
+}
+
+.dark-theme .divider-custom .divider-custom-line {
     border-color: #F7E951 !important;
+    background-color: #F7E951 !important;
+    color: #F7E951 !important;
+}
+
+.light-theme .divider-custom .divider-custom-line {
+    border-color: #5E376D !important;
+    background-color: #5E376D !important;
+    color: #5E376D !important;
 }
 
 .divider-custom .divider-custom-line:first-child {
@@ -48,17 +289,20 @@
 }
 
 .divider-custom .divider-custom-icon {
-    color: #F7E951 !important;
     font-size: 2rem;
 }
 
-.divider-custom.divider-light .divider-custom-line {
-    background-color: #F7E951;
-}
-
-.divider-custom.divider-light .divider-custom-icon {
+.dark-theme .divider-custom .divider-custom-icon {
     color: #F7E951 !important;
 }
+
+.light-theme .divider-custom .divider-custom-icon {
+    color: #5E376D !important;
+}
+
+/*  */
+
+/* Card section */
 
 .container-card {
     flex-wrap: wrap;
@@ -72,8 +316,15 @@
     background-color: #ffffff0a;
 }
 
-.subtitle-card {
+.dark-theme .subtitle-card {
+    transition: all .1s ease-in-out;
     color: #D4BBDD;
+    font-weight: bold;
+}
+
+.light-theme .subtitle-card {
+    transition: all .1s ease-in-out;
+    color: #5E376D;
     font-weight: bold;
 }
 
@@ -81,7 +332,51 @@
     border-bottom-color: #f8f9fa !important;
 }
 
-/* Animaciones */
+/*  */
+
+/* Menu section */
+
+.menu a {
+    position: relative;
+    display: block;
+    padding: 5px;
+}
+
+.menu a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #F7E951;
+    z-index: 1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease-in-out;
+}
+
+.dark-theme .menu a::before {
+    transition: all .1s ease-in-out;
+    background: #F7E951;
+}
+
+.light-theme .menu a::before {
+    transition: all .1s ease-in-out;
+    background-color: #5E376D !important;
+}
+
+.menu a:hover::before {
+    transform: scaleX(1);
+}
+
+.menu[data-animation="center"] a::before {
+    transform-origin: center;
+}
+
+/*  */
+
+/* Animaciones section */
 
 .animated {
     -webkit-animation-duration: 1s;
@@ -97,6 +392,10 @@
     animation-fill-mode: both;
 }
 
+.fadeIn {
+    animation-name: fadeIn;
+}
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -107,6 +406,16 @@
     }
 }
 
-.fadeIn {
-    animation-name: fadeIn;
+/* Copyright footer section */
+
+.light-theme .copyright {
+    background-color: #f8f9fa !important;
+    color: #303030 !important;
 }
+
+.dark-theme .copyright {
+    background-color: #ffffff0a !important;
+    color: #D4BBDD !important;
+}
+
+/*  */

@@ -1,29 +1,7 @@
 <app-base-content [titleSection]="'MENU.ITEM-PORTFOLIO'" [iconSection]="'far fa-address-card'" [loading]="loading"
   [error]="error">
-  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" *ngIf="!loading && !error"
-    style="background-color: #303030 !important;" body-section>
-    <ol class="carousel-indicators">
-      <li data-target="#carouselExampleIndicators" *ngFor="let project of projects; let i = index" [data-slide-to]="i"
-        [ngClass]="{ 'active': i === 0 }">
-      </li>
-    </ol>
 
-    <div class="carousel-inner">
-
-      <div class="carousel-item p-5" *ngFor="let project of projects | sort:'anio':'DESC'; let i = index"
-        [ngClass]="{ 'active': i === 0 }">
-        <app-card [entity]="project" [mode]="'comp'"></app-card>
-      </div>
-    </div>
-
-    <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </button>
-
-    <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </button>
-  </div>
+  <app-carousel [arrayEntity]="projects" [propOrderSort]="year" [codeCarousel]="'project'" [isButtonGB]="true"
+    *ngIf="!loading && !error" body-section>
+  </app-carousel>
 </app-base-content>

@@ -1,11 +1,11 @@
-<app-base-content [titleSection]="'MENU.ITEM-SERVICES'" [iconSection]="'fas fa-list'" [loading]="loading"
-    [error]="error">
-    <ng-container *ngIf="!loading && !error" body-section>
+<app-base-content [titleSection]="'MENU.ITEM-SKILL'" [iconSection]="'fas fa-list'" [loading]="loading" [error]="error">
+    <div class="row d-flex justify-content-center container-card" *ngIf="!loading && !error" body-section>
         <app-card *ngFor="let skill of skills | sort:'name':'ASC'" [entity]="skill" [mode]="'sp'">
             <div class="d-flex h-100 align-items-center">
-                <progressbar max="100" [value]="skill.percentage" type="purple" [striped]="true" [animate]="true">
+                <progressbar id="skillProgressbar" max="100" [value]="skill.percentage" type="dark" [striped]="true"
+                    [animate]="true">
                 </progressbar>
             </div>
         </app-card>
-    </ng-container>
+    </div>
 </app-base-content>

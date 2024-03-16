@@ -2,6 +2,6 @@ export class Project {
     id: string;
     name: string;
     description: string;
-    anio: number;
+    year: number;
     imgUrl: string;
 }

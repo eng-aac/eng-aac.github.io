@@ -1,6 +1,6 @@
 {
     "HOME": {
-        "GREETING": "Hi, I'm",
+        "GREETING": "Hello, I am",
         "DEGREE": "Developer & Teacher",
         "BUTTON-DOWNLOAD": "Resume",
         "ALERT-ERROR": {
@@ -11,6 +11,7 @@
     "MENU": {
         "ITEM-SKILL": "Skills",
         "ITEM-PORTFOLIO": "Portfolio",
+        "ITEM-FEATS": "Featurings",
         "ITEM-SERVICES": "Services"
     },
     "FOOTER": {
@@ -22,7 +23,7 @@
         },
         "COLUMN-THREE": {
             "LABEL": "About me",
-            "DESCRIPTION": "I am an independent, self-taught, committed, goal-focused, creative and team worker person. I love systems, mathematics, tennis and I have the soul of a leader."
+            "DESCRIPTION": "I am a self-taught, committed and resilient person; with strategic soft skills such as leadership, communication, teamwork and attention to detail."
         },
         "COPY-R": "Copyright"
     },
@@ -36,7 +37,14 @@
         "PROYECT-VI-DESCRIPTION": "Are you a human or are you a mutant? Find it out...",
         "PROYECT-VII-DESCRIPTION": "Website for the promotion and management of a hotel.",
         "PROYECT-VIII-DESCRIPTION": "Web app, where you can upload your license online.",
-        "PROYECT-IX-DESCRIPTION": "OOP exercise in Java; with relationships."
+        "PROYECT-IX-DESCRIPTION": "Example of relations with OOP in Java."
+    },
+    "FEATS": {
+        "FEAT-I-DESCRIPTION": "Health sector management system. Angular v15, shared libraries, microfrontends, translation, grids, requests, scss and material.",
+        "FEAT-II-DESCRIPTION": "Web system and SPA home auction. Angular v17, firebase, payment gateways, scss, bootstrap.",
+        "FEAT-III-DESCRIPTION": "School management system. Angular v11, meetings, modals, grids, reports, requests, bootstrap.",
+        "FEAT-IV-DESCRIPTION": "Electrical sector management system. Angular v10, graphics, modals, grids, reports, firebase, bootstrap.",
+        "FEAT-V-DESCRIPTION": "Software management system. Angular v11, modals, grids, reports, firebase, bootstrap."
     },
     "SERVICES": {
         "A-ITEM": {

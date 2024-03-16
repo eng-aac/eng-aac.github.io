@@ -1,20 +1,43 @@
-import { Component, Renderer2 } from '@angular/core';
+import { Component, OnDestroy, OnInit, Renderer2 } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
+import { Subscription } from 'rxjs';
+import { Utilities } from 'src/app/helpers/utilities';
+import { Link } from 'src/app/models/link';
+import { ThemeService } from 'src/app/services/theme.service';
 
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.css']
 })
-export class NavbarComponent {
+export class NavbarComponent implements OnInit, OnDestroy{
   selectedLanguage: string = 'en';
+  setContentTooltip: string = '';
+  baseClassListIconButton: string = 'fas fa-';
+  classListIconButton: string = '';
+  arrayMenu: Link[] = [];
+  linkGB: string = Utilities.getLinks( 'GB' );
+  isDark!: boolean;
+  suscriptionTheme!: Subscription; 
 
   constructor(
+    private translate: TranslateService,
     private renderer: Renderer2,
-    private translateService: TranslateService
+    private _srvTheme: ThemeService
   ) { 
-    this.translateService.setDefaultLang(this.selectedLanguage);
-    this.translateService.use(this.selectedLanguage);
+    this.translate.setDefaultLang(this.selectedLanguage);
+    this.translate.use(this.selectedLanguage);
+  }
+ 
+  ngOnInit(): void {
+    this.setContentTooltip = Utilities.setHTMLContentTooltip( 'fab fa-github ml-1' );
+    this.getTheme();
+    this.setClassListToggle();
+    this.getMenu();
+  }
+
+  private getTheme(){
+    this.suscriptionTheme = this._srvTheme.onThemeChange().subscribe( (theme) => this.isDark = theme );
   }
 
   scrollToId( id: string ){
@@ -25,8 +48,25 @@ export class NavbarComponent {
   }
 
   selectLanguage(lang: string) {
-    console.log(lang)
-    this.translateService.use(lang);
+    this.translate.use(lang);
   }
 
+  setTheme(){
+    this.isDark = !this.isDark;
+    this._srvTheme.setTheme(this.isDark);
+    this.setClassListToggle();
+  }
+
+  private setClassListToggle(){
+    const changeClassIconButton: string = this.isDark ? 'moon' : 'lightbulb';
+    this.classListIconButton = `${this.baseClassListIconButton}${changeClassIconButton}`;
+  }
+
+  private getMenu(){
+    this.arrayMenu = Utilities.getLinksMenu();
+  }
+  
+  ngOnDestroy(): void {
+    this.suscriptionTheme.unsubscribe();
+  }
 }

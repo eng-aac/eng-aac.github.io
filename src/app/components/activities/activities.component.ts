@@ -8,12 +8,13 @@ import { Service }  from 'src/app/models/service';
   styleUrls: ['./activities.component.css']
 })
 export class ActivitiesComponent implements OnInit {
-
   services: Service[] = new Array<Service>();
   loading: boolean = true;
   error: boolean = false;
 
-  constructor( private db: AngularFirestore ) { }
+  constructor( 
+    private db: AngularFirestore
+  ) { }
 
   ngOnInit(): void {
     this.services.length = 0;
@@ -34,5 +35,4 @@ export class ActivitiesComponent implements OnInit {
         this.loading = false;
       });
   }
-
 }

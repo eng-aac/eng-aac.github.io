@@ -1,7 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { trigger, style, transition, animate, state } from '@angular/animations';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { FilePDF } from 'src/app/models/file-interface';
+import { Utilities } from 'src/app/helpers/utilities';
+
+declare var particlesJS: any;
 
 @Component({
   selector: 'app-profile',
@@ -14,7 +17,7 @@ import { FilePDF } from 'src/app/models/file-interface';
         opacity: 0
       })),
       transition(':enter', [
-        animate(800, style({
+        animate(2000, style({
           transform: 'translateX(0)',
           opacity: 0.5
         }))
@@ -22,16 +25,25 @@ import { FilePDF } from 'src/app/models/file-interface';
     ])
   ]
 })
-export class ProfileComponent{
+export class ProfileComponent implements OnInit {
   loading: boolean = false;
   error: boolean = false;
+  setContentTooltipIn: string = '';
+  linkIN: string = Utilities.getLinks( 'IN' );
+  
+  constructor( 
+    private _srvHttpClient: HttpClient
+  ) {}
 
-  constructor( private _srvHttpClient: HttpClient ) {}
+  ngOnInit(): void {
+    this.setContentTooltipIn = Utilities.setHTMLContentTooltip( 'fab fa-fw fa-linkedin-in ml-1' );
+    particlesJS.load('particles-js', '../assets/particles/particles.json', null);
+  }
 
   getResume() {
     this.loading = true;
     const fileName: string = 'aldo_castillo_developer.pdf';
-    const url = 'assets/' + fileName;
+    const url = 'assets/files/' + fileName;
 
     let headers = new HttpHeaders();
     headers.set('Content-Type', 'application/json');

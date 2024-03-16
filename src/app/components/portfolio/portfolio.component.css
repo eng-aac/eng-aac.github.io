@@ -2,15 +2,3 @@
     height: 150px;
     border-radius: 10px;
 }
-
-.carousel-control-next,
-.carousel-control-prev {
-    background-color: #303030 !important;
-    border: none !important;
-    opacity: .5 !important;
-}
-
-.carousel-control-next-icon,
-.carousel-control-prev-icon {
-    color: white !important;
-}

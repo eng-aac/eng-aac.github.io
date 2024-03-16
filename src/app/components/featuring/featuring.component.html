@@ -1,0 +1,6 @@
+<app-base-content [titleSection]="'MENU.ITEM-FEATS'" [iconSection]="'fas fa-users'" [loading]="loading" [error]="error">
+
+    <app-carousel [arrayEntity]="feats" [propOrderSort]="year" [codeCarousel]="'feat'" *ngIf="!loading && !error"
+        body-section>
+    </app-carousel>
+</app-base-content>

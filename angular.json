@@ -26,7 +26,9 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/particles/particles.js"
+            ]
           },
           "configurations": {
             "production": {

@@ -8,12 +8,13 @@ import { Skill }  from 'src/app/models/skill';
   styleUrls: ['./skills.component.css']
 })
 export class SkillsComponent implements OnInit {
-
   skills: Skill[] = new Array<Skill>();
   loading: boolean = true;
   error: boolean = false;
 
-  constructor( private db: AngularFirestore ) { }
+  constructor(
+    private db: AngularFirestore
+  ) { }
 
   ngOnInit(): void {
     this.skills.length = 0;
@@ -34,5 +35,4 @@ export class SkillsComponent implements OnInit {
         this.loading = false;
       });
   }
-
 }
