@@ -1,0 +1,12 @@
+.zoom-in {
+    transition: 300ms ease-in-out;
+}
+
+.zoom-in:hover {
+    transform: scale(1.3);
+    cursor: zoom-in;
+}
+
+picture {
+    overflow: hidden;
+}

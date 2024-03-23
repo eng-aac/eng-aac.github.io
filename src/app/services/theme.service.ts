@@ -21,17 +21,22 @@ export class ThemeService {
 
   private toggleTheme(isDarkMode: boolean) {
     this.isDark.next(isDarkMode);
-
-    if (isDarkMode) {
-      document.documentElement.setAttribute("data-color-scheme", "dark");
-      document.body.classList.add('dark-theme');
-      document.body.classList.remove('light-theme');
-    } else {
-      document.documentElement.setAttribute("data-color-scheme", "light");
-      document.body.classList.remove('dark-theme');
-      document.body.classList.add('light-theme');
-    }
+    
+    if (isDarkMode) this.setPropDarkMode();
+    else this.setPropLightMode();
 
     document.documentElement.style.overflow = "";
+  }
+
+  private setPropDarkMode(){
+    document.documentElement.setAttribute("data-color-scheme", "dark");
+    document.body.classList.add('dark-theme');
+    document.body.classList.remove('light-theme');
+  }
+
+  private setPropLightMode(){
+    document.documentElement.setAttribute("data-color-scheme", "light");
+    document.body.classList.remove('dark-theme');
+    document.body.classList.add('light-theme');
   }
 }

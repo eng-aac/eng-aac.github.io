@@ -1,0 +1,23 @@
+<section class="d-lg-flex">
+    <form class="form-inline my-2 my-lg-1 ml-lg-3">
+        <div class="form-group">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">
+                        <i class="fas fa-language"></i>
+                    </div>
+                </div>
+
+                <select class="form-control" id="selectIdiom" [(ngModel)]="selectedLanguage" name="lang"
+                    (change)="sendLanguage($event.target.value)">
+                    <option value="en">🇺🇸</option>
+                    <option value="es">🇪🇸</option>
+                </select>
+            </div>
+        </div>
+    </form>
+
+    <button type="button" class="btn btn-purple my-2 my-lg-1 ml-lg-3" (click)="sendTheme()">
+        <i class="{{classListIconButton}}"></i>
+    </button>
+</section>

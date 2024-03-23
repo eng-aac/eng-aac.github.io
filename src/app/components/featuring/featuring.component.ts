@@ -1,11 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { AngularFirestore } from '@angular/fire/firestore';
 import { Feat }  from 'src/app/models/feat';
+import { fade } from 'src/assets/animations/fade.animation';
 
 @Component({
   selector: 'app-featuring',
   templateUrl: './featuring.component.html',
-  styleUrls: ['./featuring.component.css']
+  styleUrls: ['./featuring.component.css'],
+  animations: [ fade ]
 })
 export class FeaturingComponent implements OnInit {
   feats: Feat[] = new Array<Feat>();

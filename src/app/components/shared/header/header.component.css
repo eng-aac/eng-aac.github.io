@@ -1,0 +1,78 @@
+header>.text-banner>.header-greeting {
+    font-size: 2em;
+    padding-bottom: 1.2em;
+    padding-top: .2em;
+}
+
+.btn-purple-solid {
+    display: inline-flex;
+    font-size: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-purple-solid>p {
+    margin-bottom: 0;
+    margin-left: 0.5em;
+}
+
+
+@media screen and (max-width: 500px) and (min-width: 360px) {
+    h1 {
+        font-size: 2.2em !important;
+    }
+
+    header>.text-banner>.header-degree,
+    header>.text-banner>.header-greeting {
+        font-size: 1.1em !important;
+    }
+
+    .btn-purple-solid {
+        font-size: .8em !important;
+    }
+}
+
+@media screen and (max-width: 783px) and (min-width: 501px) {
+    h1 {
+        font-size: 2.8em !important;
+    }
+
+    header>.text-banner>.header-degree,
+    header>.text-banner>.header-greeting {
+        font-size: 1.5em !important;
+    }
+
+    .btn-purple-solid {
+        font-size: 1em !important;
+    }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 784px) {
+    h1 {
+        font-size: 3.2em !important;
+    }
+
+    header>.text-banner>.header-degree,
+    header>.text-banner>.header-greeting {
+        font-size: 1.8em !important;
+    }
+
+    .btn-purple-solid {
+        font-size: 1.5em !important;
+    }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 1001px) {
+    h1 {
+        font-size: 3.5em !important;
+    }
+
+    header>.text-banner>.header-degree,
+    header>.text-banner>.header-greeting {
+        font-size: 1.9em !important;
+    }
+
+    .btn-purple-solid {
+        font-size: 1.5em !important;
+    }
+}

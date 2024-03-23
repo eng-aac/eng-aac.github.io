@@ -13,5 +13,5 @@ export class CardComponent {
 
   linkGB: string = Utilities.getLinks( 'GB' );
 
-  constructor() { }
+  constructor() {}
 }

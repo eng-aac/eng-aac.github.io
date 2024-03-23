@@ -1,3 +1,4 @@
+import { slideInRight, slideInRightList } from 'src/assets/animations/slide-right.animation';
 import { Component, OnInit } from '@angular/core';
 import { AngularFirestore } from '@angular/fire/firestore';
 import { Skill }  from 'src/app/models/skill';
@@ -5,7 +6,8 @@ import { Skill }  from 'src/app/models/skill';
 @Component({
   selector: 'app-skills',
   templateUrl: './skills.component.html',
-  styleUrls: ['./skills.component.css']
+  styleUrls: ['./skills.component.css'],
+  animations: [ slideInRightList, slideInRight ]
 })
 export class SkillsComponent implements OnInit {
   skills: Skill[] = new Array<Skill>();

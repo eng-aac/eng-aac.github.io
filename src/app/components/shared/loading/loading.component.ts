@@ -9,10 +9,9 @@ export class LoadingComponent implements OnInit {
   @Input() styleType: 'sp' | 'comp' = 'comp';
   styleIndependent: string = '';
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit(): void {
     this.styleIndependent = this.styleType === 'comp' ? 'height: 300px;' : 'height: 3.9em;';
   }
-
 }

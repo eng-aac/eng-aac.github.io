@@ -1,6 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { Subscription } from 'rxjs';
-import { ThemeService } from 'src/app/services/theme.service';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-base-footer',
@@ -13,5 +11,4 @@ export class BaseFooterComponent {
   @Input() mode: 'sp' | 'comp' = 'comp';
 
   constructor() {}
-
 }

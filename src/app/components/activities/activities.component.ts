@@ -1,11 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { AngularFirestore } from '@angular/fire/firestore';
 import { Service }  from 'src/app/models/service';
+import { slideInRight, slideInRightList } from 'src/assets/animations/slide-right.animation';
 
 @Component({
   selector: 'app-activities',
   templateUrl: './activities.component.html',
-  styleUrls: ['./activities.component.css']
+  styleUrls: ['./activities.component.css'],
+  animations: [ slideInRightList, slideInRight ]
 })
 export class ActivitiesComponent implements OnInit {
   services: Service[] = new Array<Service>();

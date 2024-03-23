@@ -11,6 +11,7 @@ export class CarouselComponent implements OnInit {
   @Input() codeCarousel: string = '';
   @Input() modeCard: 'sp' | 'comp' = 'comp';
   @Input() isButtonGB: boolean;
+  
   idCarousel: string = '';
 
   constructor() { }

@@ -28,12 +28,18 @@ import { BaseContentComponent } from './components/shared/base-content/base-cont
 import { BaseFooterComponent } from './components/shared/base-footer/base-footer.component';
 import { CardComponent } from './components/shared/card/card.component';
 import { CarouselComponent } from './components/shared/carousel/carousel.component';
+import { ButtonLinkComponent } from './components/shared/button-link/button-link.component';
+import { ButtonScrollZeroComponent } from './components/shared/button-scroll-zero/button-scroll-zero.component';
+import { ActionsComponent } from './components/shared/actions/actions.component';
+import { HeaderComponent } from './components/shared/header/header.component';
+import { ParticlesComponent } from './components/shared/particles/particles.component';
 
 import { ThemeService } from './services/theme.service';
 
 import { ProgressbarModule } from 'ngx-bootstrap/progressbar';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -56,7 +62,12 @@ export function createTranslateLoader(http: HttpClient) {
     SortPipe,
     BaseFooterComponent,
     CarouselComponent,
-    FeaturingComponent
+    FeaturingComponent,
+    ButtonLinkComponent,
+    ButtonScrollZeroComponent,
+    ActionsComponent,
+    HeaderComponent,
+    ParticlesComponent
   ],
   imports: [
     BrowserModule,

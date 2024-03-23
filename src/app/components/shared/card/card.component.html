@@ -1,7 +1,7 @@
 <div class="card p-3" [style.width]="mode === 'sp' ? '18rem' : '23rem'">
     <picture>
-        <img [src]="entity.imgUrl" width="100%" height="250px" class="card-img-top image-entity" alt="entity-image"
-            *ngIf="mode === 'comp'">
+        <img [src]="entity.imgUrl" width="100%" height="250px" class="card-img-top image-entity zoom-in"
+            alt="entity-image" *ngIf="mode === 'comp'">
     </picture>
 
     <div class="text-center subtitle-card" *ngIf="mode === 'sp'">

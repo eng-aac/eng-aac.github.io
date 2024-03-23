@@ -1,11 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { AngularFirestore } from '@angular/fire/firestore';
 import { Project }  from 'src/app/models/project';
+import { fade } from 'src/assets/animations/fade.animation';
 
 @Component({
   selector: 'app-portfolio',
   templateUrl: './portfolio.component.html',
-  styleUrls: ['./portfolio.component.css']
+  styleUrls: ['./portfolio.component.css'],
+  animations: [ fade ]
 })
 export class PortfolioComponent implements OnInit {
   projects: Project[] = new Array<Project>();

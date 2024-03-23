@@ -1,8 +1,8 @@
 <nav [ngClass]="{'navbar-dark': isDark, 'navbar-light': !isDark}"
   class="navbar navbar-expand-lg bg-light-purple bg-purple fixed-top pt-1 pb-1">
-  <section class="menu container" data-animation="center">
+  <section class="menu container">
     <a class="navbar-brand font-weight-bold font-italic" [href]="linkGB" target="_blank" data-toggle="tooltip"
-      data-placement="bottom" data-placement="bottom" [title]="setContentTooltip">
+      data-placement="bottom" [title]="setContentTooltip">
       <p class="mb-0 text-nav">&lt;<span>ac</span> /&gt;
       </p>
     </a>
@@ -13,7 +13,7 @@
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto" (click)="scrollToId('body-mec')">
+      <ul class="navbar-nav ml-auto mb-lg-0 mb-3" (click)="scrollToId('body-aac')">
         <li class="nav-item" routerLinkActive="active" *ngFor="let link of arrayMenu">
           <a class="nav-link" [routerLink]="link.href">
             <i class="{{link.icon}}"></i>
@@ -22,27 +22,8 @@
         </li>
       </ul>
 
-      <form class="form-inline my-2 my-lg-1 ml-lg-3">
-        <div class="form-group">
-          <div class="input-group">
-            <div class="input-group-prepend">
-              <div class="input-group-text">
-                <i class="fas fa-language"></i>
-              </div>
-            </div>
-
-            <select class="form-control" id="selectIdiom" [(ngModel)]="selectedLanguage" name="lang"
-              (change)="selectLanguage($event.target.value)">
-              <option value="en">EN</option>
-              <option value="es">ES</option>
-            </select>
-          </div>
-
-          <button type="button" class="btn btn-purple my-2 my-lg-1 ml-lg-3" (click)="setTheme()">
-            <i class="{{classListIconButton}}"></i>
-          </button>
-        </div>
-      </form>
+      <app-actions [selectedLanguage]="selectedLanguage" [classListIconButton]="classListIconButton"
+        (isSendLanguage)="selectLanguage($event)" (isSendTheme)="setTheme()"></app-actions>
     </div>
   </section>
 </nav>

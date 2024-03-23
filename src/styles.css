@@ -9,6 +9,13 @@
     font-optical-sizing: auto;
 }
 
+@font-face {
+    font-family: "iMMune";
+    font-style: normal;
+    font-weight: 400;
+    src: local("iMMune"), url("./assets/fonts/iMMune-bold.ttf") format("opentype");
+}
+
 html,
 body {
     height: 100%;
@@ -35,11 +42,13 @@ body {
 }
 
 [data-color-scheme="dark"] ::-webkit-scrollbar-thumb {
+    transition: all .1s ease-in-out;
     background: #F7E951;
 }
 
 
 [data-color-scheme="light"] ::-webkit-scrollbar-thumb {
+    transition: all .1s ease-in-out;
     background: #5E376D;
 }
 
@@ -209,6 +218,11 @@ body {
     background: #5E376D;
 }
 
+
+header>.text-banner h1 {
+    font-family: "iMMune", "Montserrat", sans-serif;
+}
+
 /*  */
 
 /* Carousel section */
@@ -228,6 +242,7 @@ body {
 }
 
 .dark-theme .carousel-indicators li {
+    transition: all .1s ease-in-out;
     background-color: white !important;
 }
 
@@ -269,12 +284,14 @@ body {
 }
 
 .dark-theme .divider-custom .divider-custom-line {
+    transition: all .1s ease-in-out;
     border-color: #F7E951 !important;
     background-color: #F7E951 !important;
     color: #F7E951 !important;
 }
 
 .light-theme .divider-custom .divider-custom-line {
+    transition: all .1s ease-in-out;
     border-color: #5E376D !important;
     background-color: #5E376D !important;
     color: #5E376D !important;
@@ -293,10 +310,12 @@ body {
 }
 
 .dark-theme .divider-custom .divider-custom-icon {
+    transition: all .1s ease-in-out;
     color: #F7E951 !important;
 }
 
 .light-theme .divider-custom .divider-custom-icon {
+    transition: all .1s ease-in-out;
     color: #5E376D !important;
 }
 
@@ -349,10 +368,9 @@ body {
     left: 0;
     width: 100%;
     height: 2px;
-    background: #F7E951;
     z-index: 1;
     transform: scaleX(0);
-    transform-origin: left;
+    transform-origin: center;
     transition: transform 0.5s ease-in-out;
 }
 
@@ -363,15 +381,11 @@ body {
 
 .light-theme .menu a::before {
     transition: all .1s ease-in-out;
-    background-color: #5E376D !important;
+    background: #5E376D !important;
 }
 
 .menu a:hover::before {
     transform: scaleX(1);
-}
-
-.menu[data-animation="center"] a::before {
-    transform-origin: center;
 }
 
 /*  */
@@ -406,14 +420,67 @@ body {
     }
 }
 
+/*  */
+
+/* Btns float */
+
+.btn-float {
+    border-radius: 100%;
+    display: inline-flex;
+    width: 4rem;
+    height: 4rem;
+    font-size: 2.5rem;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: bold;
+    position: fixed;
+    bottom: 1.1%;
+
+    transition: all 300ms ease 0ms;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    z-index: 99;
+}
+
+.btn-float#link {
+    right: 5%;
+}
+
+.btn-float#scroll {
+    left: 5%;
+}
+
+.btn-float:hover {
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+}
+
+@media only screen and (max-width: 600px) {
+    .btn-float {
+        width: 3.2rem;
+        height: 3.2rem;
+        font-size: 2em;
+    }
+}
+
+
+@media only screen and (max-width: 500px) and (min-width: 360px) {
+    .btn-float {
+        bottom: 7%;
+    }
+}
+
+/*  */
+
 /* Copyright footer section */
 
 .light-theme .copyright {
+    transition: all .1s ease-in-out;
     background-color: #f8f9fa !important;
     color: #303030 !important;
 }
 
 .dark-theme .copyright {
+    transition: all .1s ease-in-out;
     background-color: #ffffff0a !important;
     color: #D4BBDD !important;
 }

@@ -1,7 +1,6 @@
 <app-base-content [titleSection]="'MENU.ITEM-PORTFOLIO'" [iconSection]="'far fa-address-card'" [loading]="loading"
   [error]="error">
-
-  <app-carousel [arrayEntity]="projects" [propOrderSort]="year" [codeCarousel]="'project'" [isButtonGB]="true"
-    *ngIf="!loading && !error" body-section>
+  <app-carousel [arrayEntity]="projects" [propOrderSort]="'year'" [codeCarousel]="'project'" [isButtonGB]="true"
+    *ngIf="!loading && !error" body-section @fadeInOut>
   </app-carousel>
 </app-base-content>

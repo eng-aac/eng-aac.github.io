@@ -40,11 +40,11 @@
         "PROYECT-IX-DESCRIPTION": "Ejemplo de relaciones con POO en Java."
     },
     "FEATS": {
-        "FEAT-I-DESCRIPTION": "Sistema gestión rubro salud. Angular v15, librerías compartidas, microfrontends, traducción, grillas, peticiones, scss y material.",
-        "FEAT-II-DESCRIPTION": "Sistema web y SPA remate casa. Angular v17, firebase, pasarelas de pago, scss, bootstrap.",
-        "FEAT-III-DESCRIPTION": "Sistema gestión escolar. Angular v11, reuniones, modales, grillas, reportes, peticiones, bootstrap.",
-        "FEAT-IV-DESCRIPTION": "Sistema gestión rubro eléctrico. Angular v10, gráficos, modales, grillas, reportes, firebase, bootstrap.",
-        "FEAT-V-DESCRIPTION": "Sistema gestión rubro software. Angular v11, modales, grillas, reportes, firebase, bootstrap."
+        "FEAT-I-DESCRIPTION": "Sistema gestión rubro salud. Angular v15, librerías propias, microfronts, traducción, carga perezoza, peticiones, scss, material.",
+        "FEAT-II-DESCRIPTION": "Sistema web y SPA remate de casa. Angular v17, firebase, funciones, pasarelas de pago, animaciones, scss, bootstrap.",
+        "FEAT-III-DESCRIPTION": "Sistema gestión escolar. Angular v11, carga perezoza, reuniones, modales, grillas, reportes, peticiones, bootstrap, material.",
+        "FEAT-IV-DESCRIPTION": "Sistema gestión rubro eléctrico. Angular v10, gráficos, modales, grillas, reportes, firebase, bootstrap, material.",
+        "FEAT-V-DESCRIPTION": "Sistema gestión rubro software. Angular v10, modales, grillas, reportes, firebase, bootstrap, material."
     },
     "SERVICES": {
         "A-ITEM": {

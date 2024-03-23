@@ -1,39 +1,14 @@
 <section class="profile">
-    <div class="canvas" id="particles-js">
-        <canvas class="particles-js-canvas-el"></canvas>
-    </div>
+    <app-particles></app-particles>
 
-    <div class="banner d-flex align-items-center justify-content-lg-between container" animated fadeIn>
+    <div class="banner d-flex align-items-center justify-content-center justify-content-lg-between container" animated
+        fadeIn>
         <div class="d-lg-flex justify-content-between h-100 align-items-end" @enterState>
             <div class="col-12 col-lg-7 p-0">
-                <header class="menu" data-animation="center">
-                    <p class="header-greeting text-custom">
-                        {{'HOME.GREETING' | translate }}
-                    </p>
-
-                    <a class="nav-link p-0" [href]="linkIN" target="_blank" data-toggle="tooltip" data-placement="top"
-                        [title]="setContentTooltipIn">
-                        <h1 style="font-size: 4em;" class="mb-0">ALDO CASTILLO</h1>
-                    </a>
-
-                    <p style="font-size: 2em;" class="header-degree font-weight-bold mb-0 pb-4">
-                        {{ 'HOME.DEGREE' | translate }}
-                    </p>
-
-                    <div class="d-flex justify-content-start">
-                        <button type="button" class="btn btn-purple-solid" (click)="getResume()">
-                            <i class="fas fa-file-download fa-2x"></i>
-                            <p>{{ 'HOME.BUTTON-DOWNLOAD' | translate }}</p>
-                        </button>
-
-                        <app-loading [styleType]="sp" *ngIf="loading"></app-loading>
-
-                        <app-alert [styleType]="sp" *ngIf="error"></app-alert>
-                    </div>
-                </header>
+                <app-header></app-header>
             </div>
 
-            <div class="col-12 col-lg-5 pr-0 pl-0 pt-5 pt-lg-0">
+            <div class="col-12 col-lg-5 pr-0 pl-0 pt-5 pt-lg-0 w-100 h-100">
                 <picture class="ml-auto mt-auto w-100 h-100">
                     <img class="img-profile" src="assets/img/aac-profile.jpeg" alt="img-profile">
                 </picture>

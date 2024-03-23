@@ -7,6 +7,7 @@ import { ThemeService } from './services/theme.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit{
+  title: string = 'portfolio-daac';
 
   constructor(
     private _srvTheme: ThemeService
@@ -15,4 +16,5 @@ export class AppComponent implements OnInit{
   ngOnInit(): void {
     this._srvTheme.setTheme( true );
   }
+
 }

@@ -1,6 +1,7 @@
 <app-base-content [titleSection]="'MENU.ITEM-SKILL'" [iconSection]="'fas fa-list'" [loading]="loading" [error]="error">
-    <div class="row d-flex justify-content-center container-card" *ngIf="!loading && !error" body-section>
-        <app-card *ngFor="let skill of skills | sort:'name':'ASC'" [entity]="skill" [mode]="'sp'">
+    <div class="row d-flex justify-content-center container-card" *ngIf="!loading && !error" body-section
+        @slideInRightList>
+        <app-card *ngFor="let skill of skills | sort:'name':'ASC'" [entity]="skill" [mode]="'sp'" @slideInRight>
             <div class="d-flex h-100 align-items-center">
                 <progressbar id="skillProgressbar" max="100" [value]="skill.percentage" type="dark" [striped]="true"
                     [animate]="true">

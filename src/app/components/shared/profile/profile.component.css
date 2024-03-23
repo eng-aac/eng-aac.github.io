@@ -39,102 +39,29 @@
     padding-bottom: 10%;
 }
 
-header>.header-greeting {
-    font-size: 2em;
-    padding-bottom: 1.2em;
-    padding-top: .2em;
-}
-
-.btn-purple-solid {
-    display: inline-flex;
-    font-size: 1.5rem;
-    justify-content: center;
-    align-items: center;
-}
-
-.btn-purple-solid>p {
-    margin-bottom: 0;
-    margin-left: 0.5em;
-}
 
 @media screen and (max-width: 500px) and (min-width: 360px) {
     .profile {
         padding-top: 15vh;
     }
-
-    h1 {
-        font-size: 1.8em !important;
-    }
-
-    header>.header-degree,
-    header>.header-greeting {
-        font-size: 1.1em !important;
-    }
-
-    .btn-purple-solid {
-        font-size: .8em !important;
-    }
 }
 
 @media screen and (max-width: 783px) and (min-width: 501px) {
     .profile {
-        padding-top: 15vh;
+        padding-top: 10vh;
     }
 
     .img-profile {
-        height: 70%;
-    }
-
-    h1 {
-        font-size: 2.2em !important;
-    }
-
-    header>.header-degree,
-    header>.header-greeting {
-        font-size: 1.5em !important;
-    }
-
-    .btn-purple-solid {
-        font-size: 1em !important;
+        height: 300px !important;
     }
 }
 
 @media screen and (max-width: 1000px) and (min-width: 784px) {
     .profile {
-        padding-top: 16vh;
+        padding-top: 10vh;
     }
 
     .img-profile {
-        height: 70%;
-    }
-
-
-    h1 {
-        font-size: 2.8em !important;
-    }
-
-    header>.header-degree,
-    header>.header-greeting {
-        font-size: 1.8em !important;
-    }
-
-    .btn-purple-solid {
-        font-size: 1.5em !important;
-    }
-}
-
-@media screen and (max-width: 1200px) and (min-width: 1001px) {
-
-    h1 {
-        font-size: 3em !important;
-    }
-
-    header>.header-degree,
-    header>.header-greeting {
-        font-size: 1.9em !important;
-    }
-
-    .btn-purple-solid {
-        font-size: 1.5em !important;
+        height: 300px !important;
     }
 }

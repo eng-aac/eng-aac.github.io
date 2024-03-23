@@ -40,11 +40,11 @@
         "PROYECT-IX-DESCRIPTION": "Example of relations with OOP in Java."
     },
     "FEATS": {
-        "FEAT-I-DESCRIPTION": "Health sector management system. Angular v15, shared libraries, microfrontends, translation, grids, requests, scss and material.",
-        "FEAT-II-DESCRIPTION": "Web system and SPA home auction. Angular v17, firebase, payment gateways, scss, bootstrap.",
-        "FEAT-III-DESCRIPTION": "School management system. Angular v11, meetings, modals, grids, reports, requests, bootstrap.",
+        "FEAT-I-DESCRIPTION": "Health sector management system. Angular v15, own libraries, microfronts, translation, lazy loading, requests, scss, material.",
+        "FEAT-II-DESCRIPTION": "Web system and SPA home auction. Angular v17, firebase, functions, payment gateways, animations, scss, bootstrap.",
+        "FEAT-III-DESCRIPTION": "School management system. Angular v11, lazy loading, meetings, modals, grids, reports, requests, bootstrap, material.",
         "FEAT-IV-DESCRIPTION": "Electrical sector management system. Angular v10, graphics, modals, grids, reports, firebase, bootstrap.",
-        "FEAT-V-DESCRIPTION": "Software management system. Angular v11, modals, grids, reports, firebase, bootstrap."
+        "FEAT-V-DESCRIPTION": "Software sector management system. Angular v10, modals, grids, reports, firebase, bootstrap, material."
     },
     "SERVICES": {
         "A-ITEM": {

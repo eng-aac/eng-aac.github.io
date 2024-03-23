@@ -1,0 +1,27 @@
+<header class="menu" data-animation="center">
+    <section class="text-banner text-center text-lg-left">
+        <p class="header-greeting text-custom">
+            {{'HOME.GREETING' | translate }}
+        </p>
+
+        <a class="nav-link p-0" [href]="linkIN" target="_blank" data-toggle="tooltip" data-placement="top"
+            [title]="setContentTooltipIn">
+            <h1 style="font-size: 4em;" class="mb-0">ALDO CASTILLO</h1>
+        </a>
+
+        <p style="font-size: 2em;" class="header-degree font-weight-bold mb-0 pb-4">
+            {{ 'HOME.DEGREE' | translate }}
+        </p>
+    </section>
+
+    <div class="d-flex justify-content-center justify-content-lg-start">
+        <button type="button" class="btn btn-purple-solid" (click)="getResume()">
+            <i class="fas fa-file-download fa-2x"></i>
+            <p>{{ 'HOME.BUTTON-DOWNLOAD' | translate }}</p>
+        </button>
+
+        <app-loading [styleType]="sp" *ngIf="loading"></app-loading>
+
+        <app-alert [styleType]="sp" *ngIf="error"></app-alert>
+    </div>
+</header>
