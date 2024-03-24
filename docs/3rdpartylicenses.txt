@@ -10,6 +10,9 @@ MIT
 @angular/fire
 MIT
 
+@angular/forms
+MIT
+
 @angular/platform-browser
 MIT
 
@@ -242,6 +245,12 @@ Apache-2.0
 
 @firebase/webchannel-wrapper
 Apache-2.0
+
+@ngx-translate/core
+MIT
+
+@ngx-translate/http-loader
+MIT
 
 css-loader
 MIT

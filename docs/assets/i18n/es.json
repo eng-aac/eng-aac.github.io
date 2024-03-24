@@ -1,0 +1,75 @@
+{
+    "HOME": {
+        "GREETING": "Hola, yo soy",
+        "DEGREE": "Desarrollador & Profesor",
+        "BUTTON-DOWNLOAD": "Currículo",
+        "ALERT-ERROR": {
+            "TITLE": "¡Error!",
+            "MESSAGE": "Por favor, intente más tarde."
+        }
+    },
+    "MENU": {
+        "ITEM-SKILL": "Habilidades",
+        "ITEM-PORTFOLIO": "Portafolio",
+        "ITEM-FEATS": "Colaboraciones",
+        "ITEM-SERVICES": "Servicios"
+    },
+    "FOOTER": {
+        "COLUMN-ONE": {
+            "LABEL": "Ubicación"
+        },
+        "COLUMN-SECOND": {
+            "LABEL": "Contáctame"
+        },
+        "COLUMN-THREE": {
+            "LABEL": "Sobre mí",
+            "DESCRIPTION": "Soy una persona autodidacta, comprometida y resiliente; con habilidades blandas estratégicas como liderazgo, comunicación, trabajo en equipo y atención al detalle."
+        },
+        "COPY-R": "Derechos"
+    },
+    "PORTFOLIO": {
+        "BUTTON-GITHUB": "Ver en GitHub",
+        "PROYECT-I-DESCRIPTION": "Creación y uso de una biblioteca de componentes básicos.",
+        "PROYECT-II-DESCRIPTION": "Aplicación móvil IONIC, con tus lugares favoritos.",
+        "PROYECT-III-DESCRIPTION": "Sistema de gestión para la administración de un gimnasio.",
+        "PROYECT-IV-DESCRIPTION": "Sistema de gestión de equipos; con líder y miembros.",
+        "PROYECT-V-DESCRIPTION": "Aplicación web con colección y equipos de pokemons.",
+        "PROYECT-VI-DESCRIPTION": "¿Eres humano o eres un mutante? Descúbrelo...",
+        "PROYECT-VII-DESCRIPTION": "Sitio web para la promoción y gestión de un hotel.",
+        "PROYECT-VIII-DESCRIPTION": "Aplicación web, donde podrás cargar tu licencia en línea.",
+        "PROYECT-IX-DESCRIPTION": "Ejemplo de relaciones con POO en Java."
+    },
+    "FEATS": {
+        "FEAT-I-DESCRIPTION": "Sistema gestión rubro salud. Angular v15, librerías propias, microfronts, traducción, carga perezoza, peticiones, scss, material.",
+        "FEAT-II-DESCRIPTION": "Sistema web y SPA remate de casa. Angular v17, firebase, funciones, pasarelas de pago, animaciones, scss, bootstrap.",
+        "FEAT-III-DESCRIPTION": "Sistema gestión escolar. Angular v11, carga perezoza, reuniones, modales, grillas, reportes, peticiones, bootstrap, material.",
+        "FEAT-IV-DESCRIPTION": "Sistema gestión rubro eléctrico. Angular v10, gráficos, modales, grillas, reportes, firebase, bootstrap, material.",
+        "FEAT-V-DESCRIPTION": "Sistema gestión rubro software. Angular v10, modales, grillas, reportes, firebase, bootstrap, material."
+    },
+    "SERVICES": {
+        "A-ITEM": {
+            "TITLE": "Adaptación de Diseño",
+            "DESCRIPTION": "Garantizamos que su sitio web se mostrará perfectamente en cualquier dispositivo, incluidas computadoras de escritorio, tabletas y teléfonos móviles."
+        },
+        "B-ITEM": {
+            "TITLE": "Asesoramiento & Consulta",
+            "DESCRIPTION": "Brindamos servicios de asesoramiento a compañeros y empresas en su transformación digital. También realizamos clases online de programación y matemáticas."
+        },
+        "C-ITEM": {
+            "TITLE": "Diseño Creativo",
+            "DESCRIPTION": "La cara digital de tu negocio merece destacarse. Con un diseño web atractivo, no sólo dejarás una gran impresión, sino que también atraerás a más clientes potenciales."
+        },
+        "D-ITEM": {
+            "TITLE": "Dominio & Alojamiento",
+            "DESCRIPTION": "Impulsa tu marca con nuestro servicio integral que incluye nombre de dominio y alojamiento web en el servidor más rápido durante un año. Esta oferta fortalece tu presencia en línea, garantizando un rendimiento óptimo."
+        },
+        "E-ITEM": {
+            "TITLE": "Mantenimiento",
+            "DESCRIPTION": "Nos encargamos de todas las modificaciones que desees en tu sitio y/o, garantizando un buen funcionamiento para atraer y retener a tus clientes potenciales."
+        },
+        "F-ITEM": {
+            "TITLE": "SEO",
+            "DESCRIPTION": "Optimizamos tu sitio web con una estrategia SEO inteligente, posicionando tu negocio en los primeros resultados de Google para aumentar su visibilidad y atractivo."
+        }
+    }
+}

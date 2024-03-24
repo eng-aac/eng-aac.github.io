@@ -1,0 +1,75 @@
+{
+    "HOME": {
+        "GREETING": "Hello, I am",
+        "DEGREE": "Developer & Teacher",
+        "BUTTON-DOWNLOAD": "Resume",
+        "ALERT-ERROR": {
+            "TITLE": "Error!",
+            "MESSAGE": "Please, try later."
+        }
+    },
+    "MENU": {
+        "ITEM-SKILL": "Skills",
+        "ITEM-PORTFOLIO": "Portfolio",
+        "ITEM-FEATS": "Featurings",
+        "ITEM-SERVICES": "Services"
+    },
+    "FOOTER": {
+        "COLUMN-ONE": {
+            "LABEL": "Location"
+        },
+        "COLUMN-SECOND": {
+            "LABEL": "Contact me"
+        },
+        "COLUMN-THREE": {
+            "LABEL": "About me",
+            "DESCRIPTION": "I am a self-taught, committed and resilient person; with strategic soft skills such as leadership, communication, teamwork and attention to detail."
+        },
+        "COPY-R": "Copyright"
+    },
+    "PORTFOLIO": {
+        "BUTTON-GITHUB": "See in GitHub",
+        "PROYECT-I-DESCRIPTION": "Creation and use of a basic component library.",
+        "PROYECT-II-DESCRIPTION": "IONIC mobile app, with your favorite places.",
+        "PROYECT-III-DESCRIPTION": "Management system for the administration of a gym.",
+        "PROYECT-IV-DESCRIPTION": "Team management system; of with leader and members.",
+        "PROYECT-V-DESCRIPTION": "Web app with collection and teams of pokemons.",
+        "PROYECT-VI-DESCRIPTION": "Are you a human or are you a mutant? Find it out...",
+        "PROYECT-VII-DESCRIPTION": "Website for the promotion and management of a hotel.",
+        "PROYECT-VIII-DESCRIPTION": "Web app, where you can upload your license online.",
+        "PROYECT-IX-DESCRIPTION": "Example of relations with OOP in Java."
+    },
+    "FEATS": {
+        "FEAT-I-DESCRIPTION": "Health sector management system. Angular v15, own libraries, microfronts, translation, lazy loading, requests, scss, material.",
+        "FEAT-II-DESCRIPTION": "Web system and SPA home auction. Angular v17, firebase, functions, payment gateways, animations, scss, bootstrap.",
+        "FEAT-III-DESCRIPTION": "School management system. Angular v11, lazy loading, meetings, modals, grids, reports, requests, bootstrap, material.",
+        "FEAT-IV-DESCRIPTION": "Electrical sector management system. Angular v10, graphics, modals, grids, reports, firebase, bootstrap.",
+        "FEAT-V-DESCRIPTION": "Software sector management system. Angular v10, modals, grids, reports, firebase, bootstrap, material."
+    },
+    "SERVICES": {
+        "A-ITEM": {
+            "TITLE": "Adaptive Design",
+            "DESCRIPTION": "We guarantee that your website will display flawlessly on any device, including desktop computers, tablets and mobile phones."
+        },
+        "B-ITEM": {
+            "TITLE": "Advice & Consultation",
+            "DESCRIPTION": "We provide advisory services for colleagues and companies in their digital transformation. We also carry out online programming and mathematics classes."
+        },
+        "C-ITEM": {
+            "TITLE": "Creative Design",
+            "DESCRIPTION": "The digital face of your business deserves to stand out. With an attractive web design, you will not only leave a great impression, but you will also attract more potential customers."
+        },
+        "D-ITEM": {
+            "TITLE": "Hosting & Domain",
+            "DESCRIPTION": "Boost your brand with our comprehensive service that includes a domain name and web hosting on the fastest server for one year. This offer strengthens your online presence, guaranteeing optimal performance."
+        },
+        "E-ITEM": {
+            "TITLE": "Maintenance",
+            "DESCRIPTION": "We take care of all the modifications you want on your site and/or, ensuring smooth operation to attract and retain your potential customers."
+        },
+        "F-ITEM": {
+            "TITLE": "SEO",
+            "DESCRIPTION": "We optimize your website with a smart SEO strategy, positioning your business at the top of Google results to increase its visibility and attraction."
+        }
+    }
+}
