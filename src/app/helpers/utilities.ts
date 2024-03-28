@@ -1,5 +1,6 @@
 import { Link } from 'src/app/models/link';
 import { Footer } from 'src/app/models/footer';
+import { environment } from 'src/environments/environment';
 
 export class Utilities{
 
@@ -98,6 +99,14 @@ export class Utilities{
         }
 
         return link; 
+    }
+
+    static getUrlResume(): string{
+        const folder: string = 'resumes';
+        const type: string = 'media';
+
+        const urlResume: string = `${environment.urlResume}${environment.firebase.storageBucket}/o/${folder}%2F${environment.fileNameResume}?alt=${type}&token=${environment.tokenResume}`;
+        return urlResume;
     }
 
 }

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { FilePDF } from 'src/app/models/file-interface';
 import { Utilities } from 'src/app/helpers/utilities';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-header',
@@ -25,8 +26,10 @@ export class HeaderComponent implements OnInit {
 
   getResume() {
     this.loading = true;
-    const fileName: string = 'aldo_castillo_developer.pdf';
-    const url = `assets/files/${fileName}`;
+    this.error = false;
+
+    const fileName: string = environment.fileNameResume;
+    const url = Utilities.getUrlResume();
 
     let headers = new HttpHeaders();
     headers.set('Content-Type', 'application/json');
