@@ -30,7 +30,7 @@ export class NavbarComponent implements OnInit, OnDestroy{
   }
  
   ngOnInit(): void {
-    this.setContentTooltip = Utilities.setHTMLContentTooltip( 'fab fa-github ml-1' );
+    this.setContentTooltip = Utilities.setHTMLContentTooltip( 'eng-aac', 'fab fa-github ml-1' );
     this.getTheme();
     this.setClassListToggle();
     this.getMenu();

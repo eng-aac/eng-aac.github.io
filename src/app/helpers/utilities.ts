@@ -4,30 +4,30 @@ import { environment } from 'src/environments/environment';
 
 export class Utilities{
 
-    static setHTMLContentTooltip( iconLink: string ): string {
+    static setHTMLContentTooltip( title: string, iconLink: string ): string {
         const iconTagHTMLRedirect: string = '<i class="fas fa-external-link-alt ml-3"></i>';
         const iconTagHTMLLink: string = `<i class="${iconLink}"></i>`;
 
-        const textTitle = `${iconTagHTMLLink}  ${iconTagHTMLRedirect}`;
+        const textTitle = `${title} | ${iconTagHTMLLink}  ${iconTagHTMLRedirect}`;
         return textTitle; 
     }
 
     static getLinksFooter(): Link[]  {
         const links: Link[] = [
             {
-                href: 'https://api.whatsapp.com/send?phone=542616934658&text=Hi!',
+                href: 'https://bit.ly/aacWhatsapp',
                 icon: 'fab fa-whatsapp',
             },
             {
-                href: 'https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=aldo.castillo.13@gmail.com&compose=Consulta&body=Hi!',
+                href: 'https://bit.ly/aacMail',
                 icon: 'far fa-envelope',
             },
             {
-                href: 'https://www.linkedin.com/in/dev-aac/',
+                href: 'https://bit.ly/aacLinkedIn',
                 icon: 'fab fa-fw fa-linkedin-in',
             },
             {
-                href: 'https://m.me/dev.aldo.adrian.castillo',
+                href: 'https://bit.ly/aacMessenger',
                 icon: 'fab fa-facebook-messenger',
             }
         ];
@@ -87,11 +87,11 @@ export class Utilities{
 
         switch ( code ) {
             case 'GB':
-                link = 'https://github.com/eng-aac/';
+                link = 'https://bit.ly/aacGitHub';
                 break;
 
             case 'IN':
-                link = 'https://www.linkedin.com/in/dev-aac/';
+                link = 'https://bit.ly/aacLinkedIn';
                 break;
 
             default:
