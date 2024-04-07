@@ -35,6 +35,7 @@ import { HeaderComponent } from './components/shared/header/header.component';
 import { ParticlesComponent } from './components/shared/particles/particles.component';
 
 import { ThemeService } from './services/theme.service';
+import { FileService } from './services/file.service';
 
 import { ProgressbarModule } from 'ngx-bootstrap/progressbar';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
@@ -92,7 +93,8 @@ export function createTranslateLoader(http: HttpClient) {
     AngularFirestoreModule
   ],
   providers: [
-    ThemeService
+    ThemeService,
+    FileService
   ],
   bootstrap: [AppComponent]
 })
