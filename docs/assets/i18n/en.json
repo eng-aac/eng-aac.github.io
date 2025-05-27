@@ -44,7 +44,9 @@
         "FEAT-II-DESCRIPTION": "Web system and SPA home auction. Angular v17, firebase, functions, payment gateways, animations, scss, bootstrap.",
         "FEAT-III-DESCRIPTION": "School management system. Angular v11, lazy loading, meetings, modals, grids, reports, requests, bootstrap, material.",
         "FEAT-IV-DESCRIPTION": "Electrical sector management system. Angular v10, graphics, modals, grids, reports, firebase, bootstrap.",
-        "FEAT-V-DESCRIPTION": "Software sector management system. Angular v10, modals, grids, reports, firebase, bootstrap, material."
+        "FEAT-V-DESCRIPTION": "Software sector management system. Angular v10, modals, grids, reports, firebase, bootstrap, material.",
+        "FEAT-VI-DESCRIPTION": "Payment management platform. Angular v19 from scratch, microfronts, lazy loading, apis, modals, grids, primeng, tailwind.",
+        "FEAT-VII-DESCRIPTION": "Trade management platform. Angular v19 from scratch, lazy loading, apis, modals, grids, scss, material, tailwind."
     },
     "SERVICES": {
         "A-ITEM": {
