@@ -11,7 +11,7 @@ export class CardComponent {
   @Input() mode: 'sp' | 'comp';
   @Input() isButtonGB: boolean;
 
-  linkGB: string = Utilities.getLinks( 'GB' );
+  linkGB: string = Utilities.getLinkGBCustom();
 
   constructor() {}
 }

@@ -23,7 +23,7 @@ export class Utilities{
                 icon: 'far fa-envelope',
             },
             {
-                href: 'https://bit.ly/aacLinkedIn',
+                href: 'https://bit.ly/aacLinkedin',
                 icon: 'fab fa-fw fa-linkedin-in',
             },
             {
@@ -33,6 +33,14 @@ export class Utilities{
         ];
 
         return links; 
+    }
+
+    static getLinkWhats(): Link {
+        return this.getLinksFooter()[0];
+    }
+
+    static getLinkGBCustom() {
+        return 'https://github.com/eng-aac/';
     }
 
     static getSectionFooter(): Footer[]  {
@@ -91,7 +99,7 @@ export class Utilities{
                 break;
 
             case 'IN':
-                link = 'https://bit.ly/aacLinkedIn';
+                link = 'https://bit.ly/aacLinkedin';
                 break;
 
             default:
