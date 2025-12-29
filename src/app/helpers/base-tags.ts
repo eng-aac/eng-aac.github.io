@@ -41,11 +41,11 @@ export class BaseTags {
     if ( isShort ) return finalTitleText;
     if ( finalTitleText === finalGlobalText ) return finalGlobalText;
 
-    return `${finalTitleText} | ${finalGlobalText}`;
+    return `${finalTitleText} ${finalGlobalText}`;
   }
 
   private setTranslateValidation( key: string, text: string, type: string ): string {
-    return text === key ? this.metaConfig[type] : text;
+    return text === key ? this.metaConfig[ type ] : text;
   }
 
   private getTranslateText( key: string ): string {
