@@ -1,4 +1,4 @@
-<app-base-content [titleSection]="'MENU.ITEM-FEATS'" [iconSection]="'fas fa-users'" [loading]="loading" [error]="error">
+<app-base-content [titleSection]="titleSection" [iconSection]="'fas fa-users'" [loading]="loading" [error]="error">
     <app-carousel [arrayEntity]="feats" [propOrderSort]="'year'" [codeCarousel]="'feat'" *ngIf="!loading && !error"
         body-section @fadeInOut>
     </app-carousel>

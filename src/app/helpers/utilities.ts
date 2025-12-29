@@ -1,6 +1,7 @@
 import { Link } from 'src/app/models/link';
 import { Footer } from 'src/app/models/footer';
 import { environment } from 'src/environments/environment';
+import { MetaDataConfig } from 'src/app/models/metadata-config-interface';
 
 export class Utilities{
 
@@ -66,22 +67,26 @@ export class Utilities{
     static getLinksMenu(): Link[]  {
         const menu: Link[] = [
             {
-                title: 'MENU.ITEM-SKILL',
+                title: 'MENU.ITEM-SKILL.TITLE',
+                content: 'MENU.ITEM-SKILL.CONTENT',
                 href: 'skills',
                 icon: 'fas fa-list'
             },
             {
-                title: 'MENU.ITEM-PORTFOLIO',
+                title: 'MENU.ITEM-PORTFOLIO.TITLE',
+                content: 'MENU.ITEM-PORTFOLIO.CONTENT',
                 href: 'portfolio',
                 icon: 'far fa-address-card'
             },
             {
-                title: 'MENU.ITEM-FEATS',
+                title: 'MENU.ITEM-FEATS.TITLE',
+                content: 'MENU.ITEM-FEATS.CONTENT',
                 href: 'feats',
                 icon: 'fas fa-users'
             },
             {
-                title: 'MENU.ITEM-SERVICES',
+                title: 'MENU.ITEM-SERVICES.TITLE',
+                content: 'MENU.ITEM-SERVICES.CONTENT',
                 href: 'services',
                 icon: 'fas fa-laptop-code'
             }
@@ -115,6 +120,21 @@ export class Utilities{
 
         const urlResume: string = `${environment.urlResume}${environment.firebase.storageBucket}/o/${folder}%2F${environment.fileNameResume}?alt=${type}&token=${environment.tokenResume}`;
         return urlResume;
+    }
+
+    static setMetaDataConfig(): MetaDataConfig {
+        return {
+            title: "| Aldo Adrián Castillo | Engineer & Teacher |",
+            description: "Aldo Adrián Castillo's professional portfolio. Specialist in Angular, NestJS, and agile methodologies like Scrum. I am a self-taught, committed and resilient person; with strategic soft skills such as leadership, communication, teamwork and attention to detail.",
+            author: 'Aldo Adrián Castillo',
+            keywords: [
+                'Desarrollador', 'Programador', 'Ingeniero de Software', 'Portafolio', 'Líder Técnico', 'Profesor',
+                'Frontend', 'Developer', 'Programmer', 'Fullstack Developer', 'Software Engineer', 'Web Development', 'Technical Leader', 'Teacher',
+                'Angular', 'NestJS', 'TypeScript', 'Node.js', 'Scrum', 'Agile', 'REST API',
+                'Aldo Adrián Castillo', 'AC', 'eng-aac', 'eng.aac', 'aac', 'AC Solutions'
+            ].join(', '),
+            image: 'https://eng-aac.github.io/assets/img/ac-logo.png'
+        }
     }
 
 }

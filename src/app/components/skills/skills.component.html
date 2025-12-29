@@ -1,4 +1,4 @@
-<app-base-content [titleSection]="'MENU.ITEM-SKILL'" [iconSection]="'fas fa-list'" [loading]="loading" [error]="error">
+<app-base-content [titleSection]="titleSection" [iconSection]="'fas fa-list'" [loading]="loading" [error]="error">
     <div class="row d-flex justify-content-center container-card" *ngIf="!loading && !error" body-section
         @slideInRightList>
         <app-card *ngFor="let skill of skills | sort:'name':'ASC'" [entity]="skill" [mode]="'sp'" @slideInRight>
