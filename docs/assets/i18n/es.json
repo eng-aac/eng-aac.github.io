@@ -1,18 +1,34 @@
 {
     "HOME": {
         "GREETING": "Hola, yo soy",
-        "DEGREE": "Desarrollador & Profesor",
+        "DEGREE": "Ingeniero & Profesor",
         "BUTTON-DOWNLOAD": "Currículo",
         "ALERT-ERROR": {
             "TITLE": "¡Error!",
             "MESSAGE": "Por favor, intente más tarde."
         }
     },
+    "GLOBAL-META": {
+        "TITLE": "| Aldo Adrián Castillo | Ingeniero & Profesor |",
+        "DESCRIPTION": "Portafolio profesional de Aldo Adrián Castillo. Especialista en Angular, NestJS y metodologías ágiles como Scrum. Soy una persona autodidacta, comprometida y resiliente; con habilidades blandas estratégicas como liderazgo, comunicación, trabajo en equipo y atención al detalle."
+    },
     "MENU": {
-        "ITEM-SKILL": "Habilidades",
-        "ITEM-PORTFOLIO": "Portafolio",
-        "ITEM-FEATS": "Colaboraciones",
-        "ITEM-SERVICES": "Servicios"
+        "ITEM-SKILL": {
+            "TITLE": "Habilidades",
+            "CONTENT": "Especialización técnica y herramientas de dominio profesional."
+        },
+        "ITEM-PORTFOLIO": {
+            "TITLE": "Portafolio",
+            "CONTENT": "Exhibición de proyectos destacados y soluciones implementadas."
+        },
+        "ITEM-FEATS": {
+            "TITLE": "Colaboraciones",
+            "CONTENT": "Contribuciones en proyectos conjuntos y logros compartidos."
+        },
+        "ITEM-SERVICES": {
+            "TITLE": "Servicios",
+            "CONTENT": "Soluciones profesionales adaptadas a necesidades tecnológicas."
+        }
     },
     "FOOTER": {
         "COLUMN-ONE": {

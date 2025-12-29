@@ -1,18 +1,34 @@
 {
     "HOME": {
         "GREETING": "Hello, I am",
-        "DEGREE": "Developer & Teacher",
+        "DEGREE": "Engineer & Teacher",
         "BUTTON-DOWNLOAD": "Resume",
         "ALERT-ERROR": {
             "TITLE": "Error!",
             "MESSAGE": "Please, try later."
         }
     },
+    "GLOBAL-META": {
+        "TITLE": "Aldo Adrián Castillo | Engineer & Teacher",
+        "DESCRIPTION": "Aldo Adrián Castillo's professional portfolio. Specialist in Angular, NestJS, and agile methodologies like Scrum. I am a self-taught, committed and resilient person; with strategic soft skills such as leadership, communication, teamwork and attention to detail."
+    },
     "MENU": {
-        "ITEM-SKILL": "Skills",
-        "ITEM-PORTFOLIO": "Portfolio",
-        "ITEM-FEATS": "Featurings",
-        "ITEM-SERVICES": "Services"
+        "ITEM-SKILL": {
+            "TITLE": "Skills",
+            "CONTENT": "Technical expertise and professional tool proficiency."
+        },
+        "ITEM-PORTFOLIO": {
+            "TITLE": "Portfolio",
+            "CONTENT": "Showcase of key projects and implemented solutions."
+        },
+        "ITEM-FEATS": {
+            "TITLE": "Collaborations",
+            "CONTENT": "Contributions to joint projects and shared achievements."
+        },
+        "ITEM-SERVICES": {
+            "TITLE": "Services",
+            "CONTENT": "Professional solutions tailored to technological needs."
+        }
     },
     "FOOTER": {
         "COLUMN-ONE": {
