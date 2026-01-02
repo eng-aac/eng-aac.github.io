@@ -62,7 +62,8 @@
         "FEAT-IV-DESCRIPTION": "Electrical sector management system. Angular v10, graphics, modals, grids, reports, firebase, bootstrap.",
         "FEAT-V-DESCRIPTION": "Software sector management system. Angular v10, modals, grids, reports, firebase, bootstrap, material.",
         "FEAT-VI-DESCRIPTION": "Payment management platform. Angular v19 from scratch, microfronts, lazy loading, apis, modals, grids, primeng, tailwind.",
-        "FEAT-VII-DESCRIPTION": "Trade management platform. Angular v19 from scratch, lazy loading, apis, modals, grids, scss, material, tailwind."
+        "FEAT-VII-DESCRIPTION": "Trade management platform. Angular v19 from scratch, lazy loading, apis, modals, grids, scss, material, tailwind.",
+        "FEAT-VIII-DESCRIPTION": "Marriage management platform. Angular v20 from scratch, standalone, signals, firebase, reports, audio, material, tailwind."
     },
     "SERVICES": {
         "A-ITEM": {
