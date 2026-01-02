@@ -62,7 +62,8 @@
         "FEAT-IV-DESCRIPTION": "Sistema gestión rubro eléctrico. Angular v10, gráficos, modales, grillas, reportes, firebase, bootstrap, material.",
         "FEAT-V-DESCRIPTION": "Sistema gestión rubro software. Angular v10, modales, grillas, reportes, firebase, bootstrap, material.",
         "FEAT-VI-DESCRIPTION": "Plataforma para gestión de pagos. Angular v19 desde cero, microfronts, apis, carga perezoza, modales, grillas, primeng, tailwind.",
-        "FEAT-VII-DESCRIPTION": "Plataforma para gestión de divisas. Angular v19 desde cero, carga perezoza, apis, modales, grillas, scss, material, tailwind."
+        "FEAT-VII-DESCRIPTION": "Plataforma para gestión de divisas. Angular v19 desde cero, carga perezoza, apis, modales, grillas, scss, material, tailwind.",
+        "FEAT-VIII-DESCRIPTION": "Plataforma para gestión de casamientos. Angular v20 desde cero, standalone, firebase, reportes, audio, material, tailwind."
     },
     "SERVICES": {
         "A-ITEM": {
