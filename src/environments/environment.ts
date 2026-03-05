@@ -15,7 +15,7 @@ export const environment = {
   },
   tokenResume: '5328334b-edeb-4f1b-8888-2f0701b8d280',
   urlResume: 'https://firebasestorage.googleapis.com/v0/b/',
-  fileNameResume: 'aldo_castillo_developer.pdf'
+  fileNameResume: 'aldo_castillo_soft_eng.pdf'
 };
 
 /*
