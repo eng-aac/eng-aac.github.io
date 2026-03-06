@@ -4,12 +4,12 @@
   <head>
     <script>
       ( function() {
-        if ( window.location.search.indexOf('?/') != -1 ) {
-          sessionStorage.redirect = location.href.replace( '?/', '/' );
-          window.history.replaceState( null, null, location.pathname );
+        if ( window.location.search.indexOf( '?/' ) != -1 ) {
+          var path = window.location.search.replace( '?/', '/' );
+          window.history.replaceState( null, null, path );
         }
       } )();
-    </script>  
+    </script> 
 
     <title>| Aldo Castillo | Engineer & Teacher |</title>
     <base href="/">
