@@ -2,6 +2,15 @@
   <html lang="en">
 
   <head>
+    <script>
+      ( function() {
+        if ( window.location.search.indexOf('?/') != -1 ) {
+          sessionStorage.redirect = location.href.replace( '?/', '/' );
+          window.history.replaceState( null, null, location.pathname );
+        }
+      } )();
+    </script>  
+
     <title>| Aldo Castillo | Engineer & Teacher |</title>
     <base href="/">
     
@@ -40,14 +49,14 @@
       ( function(l) {
         if ( l.search[1] === '/' ) {
           var decoded = l.search.slice(1).split('&').map( function(s) { 
-            return s.replace(/~and~/g, '&') 
+            return s.replace( /~and~/g, '&' ) 
           }).join('?');
 
           window.history.replaceState( null, null,
             l.pathname.slice( 0, -1 ) + decoded + l.hash
           );
         }
-      }( window.location ))
+      } ( window.location ))
     </script>
     
     <app-sign style="display: none;"></app-sign>

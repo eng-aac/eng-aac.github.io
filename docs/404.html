@@ -2,6 +2,15 @@
   <html lang="en">
 
   <head>
+    <script>
+      ( function() {
+        if ( window.location.search.indexOf('?/') != -1 ) {
+          sessionStorage.redirect = location.href.replace( '?/', '/' );
+          window.history.replaceState( null, null, location.pathname );
+        }
+      } )();
+    </script>  
+
     <title>| Aldo Castillo | Engineer & Teacher |</title>
     <base href="/">
     
@@ -40,14 +49,14 @@
       ( function(l) {
         if ( l.search[1] === '/' ) {
           var decoded = l.search.slice(1).split('&').map( function(s) { 
-            return s.replace(/~and~/g, '&') 
+            return s.replace( /~and~/g, '&' ) 
           }).join('?');
 
           window.history.replaceState( null, null,
             l.pathname.slice( 0, -1 ) + decoded + l.hash
           );
         }
-      }( window.location ))
+      } ( window.location ))
     </script>
     
     <app-sign style="display: none;"></app-sign>
@@ -67,5 +76,15 @@
     </script>
 
     <script src="assets/particles/particles.js"></script>
-  <script src="runtime.50c06fa08ded87dce9f3.js" defer></script><script src="polyfills.a4021de53358bb0fec14.js" defer></script><script src="scripts.00d9252d73c62d2c5fcd.js" defer></script><script src="main.fa3f4f80e83d7ca5fca0.js" defer></script></body>
+  <script src="runtime.50c06fa08ded87dce9f3.js" defer></script><script src="polyfills.a4021de53358bb0fec14.js" defer></script><script src="scripts.00d9252d73c62d2c5fcd.js" defer></script><script src="main.fa3f4f80e83d7ca5fca0.js" defer></script>
+    <script>
+      ( function() {
+        var redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+
+        if ( redirect && redirect != location.href ) {
+          history.replaceState( null, null, redirect );
+        }
+      } )();
+    </script></body>
 </html>
