@@ -32,6 +32,7 @@ import { ButtonLinkComponent } from './components/shared/button-link/button-link
 import { ButtonScrollZeroComponent } from './components/shared/button-scroll-zero/button-scroll-zero.component';
 import { ActionsComponent } from './components/shared/actions/actions.component';
 import { HeaderComponent } from './components/shared/header/header.component';
+import { SignComponent } from './components/shared/sign/sign.component';
 import { ParticlesComponent } from './components/shared/particles/particles.component';
 
 import { ThemeService } from './services/theme.service';
@@ -68,6 +69,7 @@ export function createTranslateLoader(http: HttpClient) {
     ButtonScrollZeroComponent,
     ActionsComponent,
     HeaderComponent,
+    SignComponent,
     ParticlesComponent
   ],
   imports: [
