@@ -1,10 +1,10 @@
 const fs = require('fs');
 const path = require('path');
 
-const distPath = path.join( __dirname, 'docs' );
-const indexFile = path.join( distPath, 'index.html' );
-const errorFile = path.join( distPath, '404.html' );
-const noJekyllFile = path.join( distPath, '.nojekyll' );
+const distPath = path.join( __dirname, 'dist/portfolio-daac' );
+const indexFile = path.join( distPath, 'index.html');
+const errorFile = path.join( distPath, '404.html');
+const noJekyllFile = path.join( distPath, '.nojekyll');
 
 try {
   let html = fs.readFileSync( indexFile, 'utf8' );
