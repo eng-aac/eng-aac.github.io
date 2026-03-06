@@ -7,26 +7,21 @@ const errorFile = path.join( distPath, '404.html' );
 const noJekyllFile = path.join( distPath, '.nojekyll' );
 
 try {
-
-  let html = fs.readFileSync(indexFile, 'utf8');
-  const recoveryScript = `
-    <script>
-      ( function() {
-        var redirect = sessionStorage.redirect;
-        delete sessionStorage.redirect;
-
-        if ( redirect && redirect != location.href ) {
-          history.replaceState( null, null, redirect );
-        }
-      } )();
-    </script>`
-  ;
-  html = html.replace( '</body>', recoveryScript + '</body>' );
-  fs.writeFileSync( errorFile, html );
+  let html = fs.readFileSync( indexFile, 'utf8' );
+  const redirectScript = `
+  <script>
+    ( function() {
+      var path = window.location.pathname.replace( window.location.search, "" );
+      window.location.replace( window.location.origin + '/?/' + path.substring(1) );
+    }) ();
+  </script>`;
   
+  html = html.replace( '<head>', '<head>' + redirectScript );
+  
+  fs.writeFileSync( errorFile, html );
   fs.writeFileSync( noJekyllFile, '' );
   
-  console.log( 'Post-build completado: 404.html y .nojekyll creados.' );
+  console.log( 'Post-build exitoso: 404.html (con redirección) y .nojekyll creados.' );
 } catch ( error ) {
-  console.error( 'Error en postbuild:', error );
+  console.error( 'Error:', error );
 }
